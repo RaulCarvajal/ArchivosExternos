@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                     catch (Exception ex)
                     {
-                        Log.e("Ficheros", "Error al escribir fichero en la tarjeta SD");
+                        Log.e("Ficheros", "Error al escribir archivo en la tarjeta SD");
                     }
                 }
                 Toast.makeText(getBaseContext(), "File loaded successfully!", Toast.LENGTH_SHORT).show();
