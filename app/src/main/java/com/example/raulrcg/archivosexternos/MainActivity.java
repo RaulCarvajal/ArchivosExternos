@@ -44,16 +44,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(sdAccesoEscritura && sdDisponible){
-                    String str ="Si escribe ";
+                    String str ="Si escribe ire";
                     try
                     {
                         File ruta_sd = Environment.getExternalStorageDirectory();
 
-                        File f = new File(ruta_sd.getAbsolutePath(), "ficherosd.txt");
+                        File f = new File(ruta_sd.getAbsolutePath(), "textoSD.txt");
 
-                        OutputStreamWriter fout =
-                                new OutputStreamWriter(
-                                        new FileOutputStream(f));
+                        OutputStreamWriter fout = new OutputStreamWriter(new FileOutputStream(f));
 
                         fout.write(str);
                         fout.close();
